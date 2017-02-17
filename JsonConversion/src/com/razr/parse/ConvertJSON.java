@@ -10,6 +10,16 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+/**
+* The ConvertJSON programs parses into a JSON object
+* by using a well formatted JSON URL .
+*
+* @author  Harapriya Tunuguntla
+* @version 1.0
+* @since   2017-02-07 
+* 
+*/
+
 public class ConvertJSON {
 
 	public static void main(String[] args) {
@@ -24,7 +34,13 @@ public class ConvertJSON {
 			} 
 		}
 	}
-		
+	
+	/**
+	* displays parsed JSON objects in the command line
+	* 
+	* @param String  an Restful URL string for  JSON objects
+	* @return void
+	*/		
 	public void  displayJsonFromUrl(String url){      
         
        try {    	   
@@ -43,6 +59,13 @@ public class ConvertJSON {
    		}		
 	}	
 	
+	/**
+	* checks provided URL is valid URL object
+	*  
+	* @param String  url string to verify
+	* @return boolean : true/false
+	*/
+	
 	public boolean isValidURL(String urlString) {
 		try {
 			URL url = new URL(urlString);
@@ -53,6 +76,13 @@ public class ConvertJSON {
 			return false;
 		}
 	}
+	
+	/**
+	* checks provided URL is valid URL object
+	*  
+	* @param String  url string to JSON file
+	* @return String : converted JSON file to String
+	*/
 	
 	public  String readAll(String url)  {
 		 InputStream is = null;
