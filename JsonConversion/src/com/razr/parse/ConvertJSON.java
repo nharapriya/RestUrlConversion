@@ -18,7 +18,7 @@ import org.json.JSONObject;
 * @version 1.0
 * @since   2017-02-07 
 * 
-*/
+**/
 
 public class ConvertJSON {
 
